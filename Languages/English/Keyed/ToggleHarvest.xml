@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+  <ToggleHarvest.CommandAllowHarvest>Allow harvest</ToggleHarvest.CommandAllowHarvest>
+  <ToggleHarvest.CommandAllowHarvestDesc>When disabled, colonists will never harvest plants in this zone.</ToggleHarvest.CommandAllowHarvestDesc>
+</LanguageData>
