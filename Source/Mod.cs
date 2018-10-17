@@ -8,9 +8,13 @@ namespace ToggleHarvest
     [StaticConstructorOnStartup]
     internal static class Mod
     {
+        public const string Id = "ToggleHarvest";
+        public const string Name = "Toggle Harvest";
+        public const string Version = "1.1";
+
         private static readonly HashSet<Zone_Growing> DisallowedZones = new HashSet<Zone_Growing>();
 
-        static Mod() => HarmonyInstance.Create("ToggleHarvest").PatchAll();
+        static Mod() => HarmonyInstance.Create(Id).PatchAll();
 
         public static void Reset() => DisallowedZones.Clear();
         public static bool IsAllowed(Zone_Growing zone) => !DisallowedZones.Contains(zone);
