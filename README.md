@@ -1,17 +1,23 @@
 # Toggle Harvest
-![](https://img.shields.io/badge/Version-1.0-brightgreen.svg)
+![Mod Version](https://img.shields.io/badge/Mod_Version-1.1-blue.svg)
+![RimWorld Version](https://img.shields.io/badge/Built_for_RimWorld-1.0-blue.svg)
+![Harmony Version](https://img.shields.io/badge/Powered_by_Harmony-1.2.0.1-blue.svg)\
+![Steam Subscribers](https://img.shields.io/badge/dynamic/xml.svg?label=Steam+Subscribers&query=//table/tr[2]/td[1]&colorB=blue&url=https://steamcommunity.com/sharedfiles/filedetails/%3Fid=1499848654&suffix=+total)
+![GitHub Downloads](https://img.shields.io/github/downloads/Jaxe-Dev/ToggleHarvest/total.svg?colorB=blue&label=GitHub+Downloads)
 
-Built for **RimWorld 1.0.x / 0.19.x**\
-Powered by **Harmony**\
-Supports **ModSync RW**
-
+[Link to Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=1499848654)\
 [Link to Ludeon Forum Post](https://ludeon.com/forums/index.php?topic=43552.0)
 
-------------
+---
 
-Adds an *Allow Harvesting* button to Growing Zones alongside the already existing *Allow Sowing* button.
+Adds an *Allow Harvest* button to Growing Zones alongside the already existing *Allow Sowing* button.
 
-------------
+---
 
-##### INSTALLATION
+##### STEAM INSTALLATION
+- **[Go to the Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=1499848654) and subscribe to the mod.**
+
+---
+
+##### NON-STEAM INSTALLATION
 - **[Download the latest release](https://github.com/Jaxe-Dev/ToggleHarvest/releases/latest) and unzip it into your *RimWorld/Mods* folder.**

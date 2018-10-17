@@ -11,13 +11,13 @@ namespace ToggleHarvest.Patch
         private static void Postfix(Zone_Growing __instance, ref IEnumerable<Gizmo> __result)
         {
             var allowHarvestCommand = new Command_Toggle
-                                      {
-                                                  defaultLabel = "ToggleHarvest.CommandAllowHarvest".Translate(),
-                                                  defaultDesc = "ToggleHarvest.CommandAllowHarvestDesc".Translate(),
-                                                  icon = TexCommand.Forbidden,
-                                                  isActive = () => Mod.IsAllowed(__instance),
-                                                  toggleAction = () => Mod.SetAllowed(__instance, !Mod.IsAllowed(__instance))
-                                      };
+            {
+                        defaultLabel = "ToggleHarvest.CommandAllowHarvest".Translate(),
+                        defaultDesc = "ToggleHarvest.CommandAllowHarvestDesc".Translate(),
+                        icon = TexCommand.ForbidOff,
+                        isActive = () => Mod.IsAllowed(__instance),
+                        toggleAction = () => Mod.SetAllowed(__instance, !Mod.IsAllowed(__instance))
+            };
 
             __result = new List<Gizmo>(__result) { allowHarvestCommand };
         }
