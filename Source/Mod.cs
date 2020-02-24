@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Harmony;
+using System.Collections.Generic;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 
@@ -10,14 +10,15 @@ namespace ToggleHarvest
     {
         public const string Id = "ToggleHarvest";
         public const string Name = "Toggle Harvest";
-        public const string Version = "1.1";
+        public const string Version = "1.2";
 
         private static readonly HashSet<Zone_Growing> DisallowedZones = new HashSet<Zone_Growing>();
 
-        static Mod() => HarmonyInstance.Create(Id).PatchAll();
+        static Mod() => new Harmony(Id).PatchAll();
 
         public static void Reset() => DisallowedZones.Clear();
         public static bool IsAllowed(Zone_Growing zone) => !DisallowedZones.Contains(zone);
+
         public static void SetAllowed(Zone_Growing zone, bool allowed)
         {
             var isDisallowed = DisallowedZones.Contains(zone);
