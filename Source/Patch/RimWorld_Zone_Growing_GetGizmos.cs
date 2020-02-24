@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Harmony;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 
@@ -12,11 +12,11 @@ namespace ToggleHarvest.Patch
         {
             var allowHarvestCommand = new Command_Toggle
             {
-                        defaultLabel = "ToggleHarvest.CommandAllowHarvest".Translate(),
-                        defaultDesc = "ToggleHarvest.CommandAllowHarvestDesc".Translate(),
-                        icon = TexCommand.ForbidOff,
-                        isActive = () => Mod.IsAllowed(__instance),
-                        toggleAction = () => Mod.SetAllowed(__instance, !Mod.IsAllowed(__instance))
+                defaultLabel = "ToggleHarvest.CommandAllowHarvest".Translate(),
+                defaultDesc = "ToggleHarvest.CommandAllowHarvestDesc".Translate(),
+                icon = TexCommand.ForbidOff,
+                isActive = () => Mod.IsAllowed(__instance),
+                toggleAction = () => Mod.SetAllowed(__instance, !Mod.IsAllowed(__instance))
             };
 
             __result = new List<Gizmo>(__result) { allowHarvestCommand };
