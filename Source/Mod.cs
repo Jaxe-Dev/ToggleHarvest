@@ -10,7 +10,7 @@ namespace ToggleHarvest
     {
         public const string Id = "ToggleHarvest";
         public const string Name = "Toggle Harvest";
-        public const string Version = "1.3";
+        public const string Version = "1.4";
 
         private static readonly HashSet<Zone_Growing> DisallowedZones = new HashSet<Zone_Growing>();
 
