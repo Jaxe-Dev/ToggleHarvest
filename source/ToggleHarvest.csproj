@@ -64,7 +64,6 @@
     <Content Include="Assets\About\PublishedFileId.txt" />
     <Content Include="Assets\Languages\English\Keyed\ToggleHarvest.xml" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(ProjectDir)release.targets" />
 </Project>
