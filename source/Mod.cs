@@ -8,7 +8,7 @@ namespace ToggleHarvest
   {
     public const string Id = "ToggleHarvest";
     public const string Name = "Toggle Harvest";
-    public const string Version = "1.7";
+    public const string Version = "1.8";
 
     static Mod() => new Harmony(Id).PatchAll();
   }
