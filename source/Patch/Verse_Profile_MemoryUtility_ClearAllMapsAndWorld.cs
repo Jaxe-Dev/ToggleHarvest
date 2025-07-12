@@ -2,15 +2,14 @@
 using ToggleHarvest.Helpers;
 using Verse.Profile;
 
-namespace ToggleHarvest.Patch
+namespace ToggleHarvest.Patch;
+
+[HarmonyPatch(typeof(MemoryUtility), "ClearAllMapsAndWorld")]
+internal static class Verse_Profile_MemoryUtility_ClearAllMapsAndWorld
 {
-  [HarmonyPatch(typeof(MemoryUtility), "ClearAllMapsAndWorld")]
-  internal static class Verse_Profile_MemoryUtility_ClearAllMapsAndWorld
+  private static void Prefix()
   {
-    private static void Prefix()
-    {
-      Zone_Growing_Helper.Reset();
-      Building_PlantGrower_Helper.Reset();
-    }
+    Zone_Growing_Helper.Reset();
+    Building_PlantGrower_Helper.Reset();
   }
 }
